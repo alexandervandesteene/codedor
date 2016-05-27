@@ -1,0 +1,14 @@
+<md-content style="padding: 20px">
+    <div layout="row" layout-align="space-between start">
+        <h1>{{newsdetail.title}}</h1>
+        <h4>{{newsdetail.publish_date}}</h4>
+    </div>
+
+    <div layout="column">
+        <p>{{newsdetail.intro}}</p>
+        <p>{{newsdetail.description}}</p>
+    </div>
+
+    <md-button class="md-raised md-primary" ng-click="goBack()">terug</md-button>
+
+</md-content>

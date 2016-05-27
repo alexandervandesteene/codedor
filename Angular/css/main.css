@@ -1,0 +1,19 @@
+.listItem {
+    background-color: #E1E2E3;
+    width: 100%;
+    border: black 1px solid;
+    padding: 5px;
+    cursor: hand;
+}
+
+.listItemTitle {
+    font-size: 20px;
+    width: 80%;
+    display: inline-block;
+    cursor: hand;
+}
+
+.listItemDate {
+    /*float: right;
+    margin-right: 15px;*/
+}

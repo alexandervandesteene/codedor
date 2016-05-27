@@ -1,0 +1,16 @@
+<md-content>
+    <md-list>
+        <md-list-item class="md-3-line" ng-repeat="newsItem in news" ng-click="showDetails(newsItem.News.id)">
+            <img src="http://iconshow.me/media/images/Mixed/line-icon/png/512/news-512.png"
+                 style="width:40px;margin-right: 10px"/>
+            <div class="md-list-item-text" layout="column">
+                <div layout="row" layout-align="space-between start">
+                    <h3>{{newsItem.News.title}}</h3>
+                    <h4>{{newsItem.News.publish_date}}</h4>
+                </div>
+                <p>{{newsItem.News.intro}}</p>
+            </div>
+            <md-divider></md-divider>
+        </md-list-item>
+    </md-list>
+</md-content>
