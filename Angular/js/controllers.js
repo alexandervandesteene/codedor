@@ -2,9 +2,12 @@ var app = angular.module('AppControllers', []);
 
 app.controller('HomeController', function ($scope, $location, $http) {
 
-    $http.get('http://localhost:3000/rest_news.json').success(function (result) {
+    $scope.loading = true;
+
+    $http.get('http://solicitatiecodedor.azurewebsites.net/rest_news.json').success(function (result) {
         news = result.news;
         $scope.news = news;
+        $scope.loading = false;
     }).error(function (err) {
         console.log("unable to get news", err);
     });
@@ -17,11 +20,14 @@ app.controller('HomeController', function ($scope, $location, $http) {
 
 app.controller('NewsDetailController', function ($scope, $routeParams, $http, $location) {
 
+    $scope.loading = true;
+
     var id = $routeParams.id;
-    var url = "http://localhost:3000/restnews/view/" + id + ".json";
+    var url = "http://solicitatiecodedor.azurewebsites.net/restnews/view/" + id + ".json";
 
     $http.get(url).success(function (result) {
         $scope.newsdetail = result.news.News;
+        $scope.loading = false;
     });
 
     $scope.goBack = function () {

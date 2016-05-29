@@ -70,10 +70,10 @@ class DATABASE_CONFIG
     public $default = array(
         'datasource' => 'Database/Mysql',
         'persistent' => false,
-        'host' => 'localhost:8889',
-        'login' => 'root',
-        'password' => 'root',
-        'database' => 'alexander_db',
+        'host' => 'eu-cdbr-azure-west-d.cloudapp.net:3306',
+        'login' => 'be976077694c66',
+        'password' => 'f7176cac',
+        'database' => 'SolicitatieCodedor',
         'prefix' => '',
         //'encoding' => 'utf8',
     );
@@ -81,10 +81,10 @@ class DATABASE_CONFIG
     public $test = array(
         'datasource' => 'Database/Mysql',
         'persistent' => false,
-        'host' => 'localhost:8889',
-        'login' => 'root',
-        'password' => 'root',
-        'database' => 'alexander_db',
+        'host' => 'eu-cdbr-azure-west-d.cloudapp.net:3306',
+        'login' => 'be976077694c66',
+        'password' => 'f7176cac',
+        'database' => 'SolicitatieCodedor',
         'prefix' => '',
         //'encoding' => 'utf8',
     );
